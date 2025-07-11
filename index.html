@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Tasa & Rina</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <audio id="bgMusic" autoplay loop>
+    <source src="musik/romantis.mp3" type="audio/mpeg">
+  </audio>
+  <button onclick="toggleMusic()">Play / Pause Musik</button>
+
+  <section class="fade-in">
+    <h1>Tasa & Rina</h1>
+    <p>12 Desember 2022 | Pontanakayang</p>
+  </section>
+
+  <section class="slide-in">
+    <h2>Akad Nikah</h2>
+    <p>12 Desember 2022, pukul 11:00 PM</p>
+  </section>
+
+  <section class="slide-in">
+    <h2>Resepsi</h2>
+    <p>12 Desember 2022, pukul 08:00 PM</p>
+  </section>
+
+  <iframe src="https://www.google.com/maps?q=Pontanakayang&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+  <form name="rsvpForm" onsubmit="submitForm(event)">
+    <h3>Konfirmasi Kehadiran (RSVP)</h3>
+    <input type="text" name="nama" placeholder="Nama" required><br>
+    <select name="hadir">
+      <option value="Hadir">Hadir</option>
+      <option value="Tidak Hadir">Tidak Hadir</option>
+    </select><br>
+    <textarea name="ucapan" placeholder="Tulis ucapan untuk Tasa & Rina" required></textarea><br>
+    <button type="submit">Kirim</button>
+  </form>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
